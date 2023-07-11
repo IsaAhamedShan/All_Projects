@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="quiz-app.css">
+    <script src="quiz-app.js" defer></script>
+</head>
+
+<body>
+    <div class="alert">
+        <div class="alert-title">
+            <h2>Congratulation!!</h2>
+        </div> You got them all.
+    </div>
+    <form id="quiz-form">
+        <ol class="questions">
+            <li class="question-item"> What does this code return? (0 || '' || false || "Hi") <ol class="options">
+                    <input type="radio" class="answer" name="first" value="false"> 0 <br>
+                    <input type="radio" class="answer" name="first" value="false"> "" <br>
+                    <input type="radio" class="answer" name="first" value="true">"Hi" <br>
+                    <input type="radio" class="answer" name="first" value="false"> false <br>
+                </ol>
+            </li>
+            <br>
+            <li class="question-item"> What is it called when a function calls itself? <ol class="options">
+                    <input type="radio" class="answer" name="s" value="false"> Inception <br>
+                    <input type="radio" class="answer" name="s" value="true"> Recursion <br>
+                    <input type="radio" class="answer" name="s" value="false">self calling <br>
+                    <input type="radio" class="answer" name="s" value="false"> Who cares <br>
+                </ol>
+            </li>
+            <br>
+            <li class="question-item"> What we use to make a content inline? <ol class="options">
+                    <input type="radio" class="answer" name="t" value="true"> display:inline <br>
+                    <input type="radio" class="answer" name="t" value="false"> dfsgsd <br>
+                    <input type="radio" class="answer" name="t" value="false">sgdfdfsg <br>
+                    <input type="radio" class="answer" name="t" value="false">dsfgsd <br>
+                </ol>
+            </li>
+        </ol>
+        <button type="submit">Check</button>
+    </form>
+</body>
+
+</html>
