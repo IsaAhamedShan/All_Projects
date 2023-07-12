@@ -93,7 +93,7 @@ p {
 
 /* flowers shocase */
 
-.flowersDescription {
+.description {
   margin: 0 auto;
   max-width: 59.4rem;
   text-align: center;
@@ -106,6 +106,7 @@ p {
   margin: 0 24rem;
   padding-top: 5rem;
 }
+
 
 /* .flowers-pictures {
   display: flex;
@@ -162,8 +163,9 @@ p {
   width: 31.4rem;
   height: 47.1rem;
 }
+
 /* support section */
-.support{
+.support {
   display: flex;
   background: rgba(37, 37, 37, .05);
   justify-content: space-between;
@@ -176,8 +178,8 @@ p {
   display: flex;
   justify-content: center;
   background: rgba(229, 84, 115, 0.07);
-  padding-top: 10rem;
-  
+  padding: 10rem 0;
+
 
 }
 
@@ -189,7 +191,55 @@ p {
 
 .signuppic {
   width: 45%;
+
   padding-right: 42.7rem;
   display: flex;
   justify-content: flex-end;
+}
+
+/* subscribe */
+.subscribe {
+  margin: 12.8rem 24rem;
+  background-image: url(images/footer.svg);
+  height: 44.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addsubscribe {
+  margin: auto 28.7rem;
+  width: 100%;
+}
+
+.infosubscribe {
+  display: flex;
+
+}
+
+.infosubscribe>input {
+  width: 100%;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: .5rem;
+  border: none;
+}
+
+/* footer */
+.footer {
+  background: black;
+}
+
+.footerDescription {
+  color: white;
+  padding: 12.8rem 0;
+}
+
+.websiteRight {
+  color: #8f8f8f;
+  font-size: 1.6rem;
+}
+
+.footerDescription>h2>strong {
+  color: #E55473;
 }
