@@ -9,7 +9,6 @@
   --color-body-darker: #5c5577;
   --color-border: #ccc;
   --border-radius: 30px; */
-
 }
 
 html {
@@ -116,7 +115,7 @@ p {
 } */
 
 .feature_flowers {
-  height: 60.5rem;
+  height: 53.8rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -162,4 +161,26 @@ p {
 .ff3>img {
   width: 31.4rem;
   height: 47.1rem;
+}
+
+/* sign up section */
+.signup {
+  display: flex;
+  justify-content: center;
+  background: rgba(229, 84, 115, 0.07);
+  padding-top: 10rem;
+
+}
+
+.discountInfo {
+  width: 55%;
+  text-align: center;
+  padding-left: 39.5rem;
+}
+
+.signuppic {
+  width: 45%;
+  padding-right: 42.7rem;
+  display: flex;
+  justify-content: flex-end;
 }
