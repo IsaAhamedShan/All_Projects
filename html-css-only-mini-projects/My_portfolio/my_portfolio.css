@@ -255,14 +255,12 @@ b {
 
     color: #dcdcdc;
     width: 85%;
-
-
-
 }
 
 .aboutMe-header {
     max-width: 118rem;
     margin: 0 auto;
+    padding: 3rem 0;
 }
 
 .aboutMe-header>h2 {
@@ -557,4 +555,82 @@ padding-bottom: 2.5rem;
 
 .btn-sendmessage {
     margin: 1rem;
+}
+
+/* animations */
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    animation: floating 5s ease-in-out infinite;
+}
+
+/* footer */
+footer {
+    background: var(--color-primary-background-navbar);
+
+}
+
+.footer-content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.footer-header {
+    text-align: center;
+    color: white;
+    background: var(--color-primary-background-navbar);
+    padding-top: 7rem
+}
+
+.footer-passage {
+    text-align: center;
+    color: white;
+    /* background: var(--color-primary-background-navbar); */
+    padding: 3rem
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+.icons :hover,
+.card-logo :hover {
+    transform: scale(1.05);
+    transition: .25s;
+}
+
+/* animation top to bottom */
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.logo-animation {
+    animation: floating 5s ease-in-out infinite;
 }
