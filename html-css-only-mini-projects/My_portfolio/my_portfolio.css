@@ -159,6 +159,36 @@ align-items: center;
     left: 1rem;
     top: 2rem;
     position: absolute;
-    height: max-content;
+    height: 70%;
+
     color: white;
+  }
+
+
+ 
+   .title{
+    /* -webkit-text-stroke: 1px #fff; */
+    display: inline-block;
+    color: transparent;
+    font-size: 4rem;
+    background-image: linear-gradient(#6c6c6c, #6c6c6c);
+    background-repeat: no-repeat;
+    -webkit-background-clip:text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+    
+   }
+  @keyframes backcolor {
+    0% {
+      background-position: -750px 0;
+    }
+    35% {
+      background-position: 0 0;
+    }
+    65% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
   }
