@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+main {
+    max-width: 114rem;
+    margin: 0 auto;
+    
+  }
+
+header,.banner{
+    background: #FFF8F3;
+    height: auto;
+}
+.btn-primary{
+    padding: 1.5rem 2.25rem;
+    outline: none;
+    color: white;
+    background: #FD6E0A;
+    border-radius: .35rem;
+    font-size:2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-phone{
+    padding: 1.5rem 2.25rem;
+    outline: none;
+    color: #FD6E0A;
+    background: white;
+    border-radius: .35rem;
+    font-size:2rem;
+    border: none;
+    border: 1px solid #FD6E0A;
+    margin-left: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-cv-hire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  
+  .btn-phone>i, .btn-primary>i {
+    margin-right: .8rem;
+  }
+
+.text-primary{
+    color: #FD6E0A;
+    font-size: 4.5rem
+}
+
+.navbar>ul{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+.navbar>ul>li{
+    margin: 1rem;
+    align-self: center;
+    list-style: none;
+    text-decoration: none;
+    padding: 0 2rem;
+    font-size: 2.5rem;
+
+}
+li>a{
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 27rem;
+}
+.nav-title{
+    font-size: 4.5rem;
+    font-weight: 900;
+    
+}
+.developer{
+    float: left;
+    left: 1rem;
+    top: 2rem;
+    position: absolute;
+    height: max-content;
+}
+/* banner properties */
+.banner{
+    padding: 14rem 0rem 0rem 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.banner-content{
+    max-width: 58.5rem;
+
+}
+.bannerText1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #6c6c6c;
+}
+.bannerText2{
+    font-size: 8.5rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
+.bannerText3{
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+ .profile-pic{
+    position: absolute;
+    right: 1rem;
+    top: 27.3rem;
+    z-index: 2;
+    width: 50rem;
+}
+
+/* .profile-background{
+    position: absolute;
+    right: 1rem;
+    top: 34.3rem;
+    z-index: -1;
+}  */
+/* aboutme */
+.aboutMe{
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 13.3rem;
+    width: 114rem;
+    height: 55rem;
+    background: #FFF8F3;
+    margin-top: 10rem;
+}
+.aboutMe>h1, .aboutMe>p{
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+.aboutMe>p{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+}
+.aboutMe>li>ul{
+    font-size: 1.5rem;
+    padding: 2rem 4.5rem;
+    /* align-self: center; */
+}
+.aboutMe>li>ul>b{
+    font-size: 1.5rem;
+}
+.about-me-list{
+    display: flex;
+    justify-content: center;
+}
+/* what i do */
+
+.whatido{
+ margin: auto;   
+}
+.whatido>h1{
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 10rem;
+
+}
+.mydetails{
+    background: #FFF8F3;
+    color: rgb(162, 162, 162);
+    font-size: 1.8rem;
+    padding: 3rem 25rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+/* skill cards */
+.skill-card{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: white;
+    padding: 3rem;
+}
+.skill-list{
+    background: #FFF8F3;
+    display: flex;
+    /* max-width: 35rem; */
+    gap: 5rem;
+}
+.skill-card>h3{
+    padding: 2rem 0;   
+}
+/* resumeSummery */
+.education{
+    margin: 4rem;
+}
+.SummeryHeading{
+    font-size: 3rem;
+    text-align: center;
+    margin: 3rem 0rem;
+}
+.MyEducationHeading,.MyExperienceHeading{
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+.education-list>p{
+    border-bottom: 2px solid rgb(157, 156, 156);
+    padding-bottom: 2rem;
+}
+.education-list>h1{
+    padding: 2rem 0;
+    font-size: 2.8rem;
+}
+.education-list>h3{
+    font-size: 1.8rem;
+    padding: 2rem 0;
+    color: rgb(157, 156, 156);
+}
+.education-list>p{
+    font-size: 1.5rem;
+}
+.resumeSummery{
+    display: flex;
+}
+.downloadCV{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* footer */
+footer{
+    display: flex;
+    background: #FFF8F3;
+    margin-top: 4rem;
+    justify-content: center;
+}
+.footer-div{
+    width: 40%;
+}
+.footer-left{
+    margin-right: 1rem;
+}
+.footer-right{
+    margin-left: 5rem;
+}
+
+.footer-div>h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
+.footer-div>p{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.footer-form{
+    font-size: 3rem;
+}
+.footer-form>input,.footer-form>textarea{
+    font-size: 1.2rem;
+    display: block;
+    padding: 1.5rem;
+    outline: 0;
+    border-radius: .5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+}
