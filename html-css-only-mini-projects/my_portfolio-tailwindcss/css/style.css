@@ -1,0 +1,7 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.custom-font-element {
+  font-family: 'bebas', Bebas-Neue;
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

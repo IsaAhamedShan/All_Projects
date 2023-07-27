@@ -1,0 +1,14 @@
+
+
+.error{
+    display: none;
+    background: rgb(212, 86, 86);
+    padding:.5rem;
+    border-radius: .25rem;
+}
+.error.show{
+    display: block;
+    background: rgb(212, 86, 86);
+    padding:.5rem;
+    border-radius: .25rem;
+}

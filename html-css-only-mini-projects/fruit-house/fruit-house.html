@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white ">
+    <header class="lg:w-3/4 m-auto ">
+        <div class="navbar p-0 md:hidden">
+            <div class="navbar bg-white">
+                <div class="flex-none">
+                    <img class="w-8/12" src="images/logo.png" alt="">
+                </div>
+                <div class="flex-1">
+                    <a class="btn btn-ghost normal-case text-xl px-0">Fruit Burst</a>
+                </div>
+                <div class="flex-none">
+                    <button class="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block w-5 h-5 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="largerScreenNavbar hidden bg-[#F85559] md:flex justify-between items-center rounded-full py-8 ">
+            <div>
+                <li class="flex [&>*]:px-3 [&>*]:text-center text-white lg:pl-8">
+                    <ul>Home</ul>
+                    <ul>About Us</ul>
+                    <ul>Shop</ul>
+                    <ul>All Fruits</ul>
+                </li>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="flex-none">
+                    <img class="w-8/12" src="images/logo.png" alt="">
+                </div>
+                <div class="flex-1">
+                    <a class="btn btn-ghost normal-case text-[2.5rem] px-0 text-white text-2xl">Fruit Burst</a>
+                </div>
+            </div>
+            <div class="pr-9 w-3/12">
+                <input class="bg-white rounded-full py-3 pl-4 w-[100%]" type="text" placeholder="Search here"
+                    class="input input-bordered w-full max-w-xs" />
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg> -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero px-4  lg:w-3/4 m-auto md:px-0  ">
+            <div class="hero min-h-fit rounded-lg bg-[url(images/banner4.png)] md:my-16 md:rounded-none">
+                <div class="hero-content text-center lg:pt-32 lg:pb-56">
+                    <div class="w-full">
+                        <h1 class=" font-bold text-2xl md:text-5xl pt-8 lg:text-7xl ">Exotic tastes at your <br>
+                            doorstep</h1>
+                        <p class="text-sm md:font-normal py-6 ">We supply highly quality organic products</p>
+                        <button class="btn btn-primary border-none bg-[#F85559] px-2 py-2 md:px-8">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" lg:flex justify-between lg:w-3/4 m-auto md:py-8">
+            <div class="left bg-white">
+                <h2 class="text-center text-2xl py-2 md:text-5xl">Deal of the day</h2>
+                <p class="text-center text-sm m-auto pb-2 md:text-normal w-[60%]">Contrary to popular belief, is not
+                    simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+                    2000 years old.</p>
+            </div>
+            <div class="flex py-4 md:flex gap-5 justify-center items-center">
+                <div>
+                    <span class="countdown font-mono text-4xl">
+                        <span style="--value:15;"></span>
+                    </span> days
+                </div>
+                <div>
+                    <span class="countdown font-mono text-4xl">
+                        <span style="--value:10;"></span>
+                    </span> hours
+                </div>
+                <div>
+                    <span class="countdown font-mono text-4xl">
+                        <span style="--value:24;"></span>
+                    </span> min
+                </div>
+                <div>
+                    <span class="countdown font-mono text-4xl">
+                        <span style="--value:31;"></span>
+                    </span> sec
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="[&>*]:m-auto [&>*]:mb-6 md:flex flex-wrap lg:w-3/4 m-auto lg:flex-nowrap">
+                <div class="card w-[21rem] bg-white shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/fruit6.png" alt="fruit" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <p>Apples</p>
+                        <img src="images/rating.png" alt="">
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-white border-none text-[#F85559]">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-[21rem] bg-white shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/fruit7.png" alt="fruit" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <p>Apples</p>
+                        <img src="images/rating.png" alt="">
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-white border-none text-[#F85559]">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-[21rem] bg-white shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/fruit8.png" alt="fruit" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <p>Apples</p>
+                        <img src="images/rating.png" alt="">
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-white border-none text-[#F85559]">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-[21rem] bg-white shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/fruit9.png" alt="fruit" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <p>Apples</p>
+                        <img src="images/rating.png" alt="">
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-white border-none text-[#F85559]">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center"><button class="btn btn-primary  bg-[#F85559]  border-none">Shop
+                    Now</button></div>
+        </div>
+        <!-- <div class="hero min-h-screen bg-base-200 px-0"> -->
+        <div class="hero-content text-center bg-[url(images/banner1.png)] lg:flex flex-between m-auto ">
+            <div class="">
+                <h1 class="text-5xl font-bold">Meet the team section</h1>
+                <p class="py-6">Contrary to popular belief, is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <div class="[&>*]:m-auto [&>*]:mb-4 md:flex flex-wrap lg:w-3/4 m-auto lg:flex-nowrap">
+                    <div class="card w-[20rem] bg-transparent shadow-xl mb-4 ">
+                        <figure class="px-10 pt-10">
+                            <img class="rounded-full" src="images/member1.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Awlad Hossain</h2>
+                            <p>Fruits Expert</p>
+                        </div>
+                        <div class="flex justify-center items-center [&>*]:px-2">
+                            <img src="images/facebook1.png" alt="">
+                            <img src="images/twitter1.png" alt="">
+                            <img src="images/linkedin1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card w-[20rem] bg-transparent shadow-xl mb-4 ">
+                        <figure class="px-10 pt-10">
+                            <img class="rounded-full" src="images/member2.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Safia Chowdhury</h2>
+                            <p>Fruits Expert</p>
+                        </div>
+                        <div class="flex justify-center items-center [&>*]:px-2">
+                            <img src="images/facebook1.png" alt="">
+                            <img src="images/twitter1.png" alt="">
+                            <img src="images/linkedin1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card w-[20rem] bg-transparent shadow-xl mb-4 ">
+                        <figure class="px-10 pt-10">
+                            <img class="rounded-full" src="images/member3.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Rokib Chaowdhury</h2>
+                            <p>Fruits Expert</p>
+                        </div>
+                        <div class="flex justify-center items-center [&>*]:px-2">
+                            <img src="images/facebook1.png" alt="">
+                            <img src="images/twitter1.png" alt="">
+                            <img src="images/linkedin1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card w-[20rem] bg-transparent shadow-xl mb-4 ">
+                        <figure class="px-10 pt-10">
+                            <img class="rounded-full" src="images/member4.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Chaity</h2>
+                            <p>Fruits Expert</p>
+                        </div>
+                        <div class="flex justify-center items-center [&>*]:px-2">
+                            <img src="images/facebook1.png" alt="">
+                            <img src="images/twitter1.png" alt="">
+                            <img src="images/linkedin1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-64 carousel rounded-box">
+            <div class="carousel-item w-full">
+              <img src="images/banner1.png" class="w-full" alt="Tailwind CSS Carousel component" />
+            </div> 
+            <div class="carousel-item w-full">
+              <img src="images/banner2.png" class="w-full" alt="Tailwind CSS Carousel component" />
+            </div> 
+            
+            <div class="carousel-item w-full">
+              <img src="images/banner3.png" class="w-full" alt="Tailwind CSS Carousel component" />
+            </div> 
+            <div class="carousel-item w-full">
+              <img src="images/banner4.png" class="w-full" alt="Tailwind CSS Carousel component" />
+            </div> 
+            
+          </div>
+        <!-- </div> -->
+    </main>
+    <footer></footer>
+</body>
+
+</html>
