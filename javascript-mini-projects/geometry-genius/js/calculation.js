@@ -11,7 +11,7 @@ function getElementByInput(firstInput,secondInput) {
     // sinputElement.value = '';
     return result;
 }
-function listAppend(count, name,area){
+function createListItem(count, name,area){
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${count}</td>
@@ -21,7 +21,6 @@ function listAppend(count, name,area){
       <td>
       <button class='btn btn-primary mx-3'>Convert</button>
       </td>
-    
     `;
     return tr;
 }
@@ -29,12 +28,48 @@ function listAppend(count, name,area){
 //USE INNERTEXT INSTEAD OF INNER HTML CAUSE ITS VULNURABLE TO XSS ATTACK
 //selecting triangle input and calculating
 function triangleArea(){
-    count = count + 1;
+    count += 1;
     const result = getElementByInput('triangleFirstInput','triangleSecondInput');
     const area = 0.5*result;
-    const calculationList = document.getElementById('calculationList');
-    const tlist = listAppend(count,'Triangle', area);
-    calculationList.appendChild(tlist);
+    const tlist = createListItem(count,'Triangle', area);
+    const calculationListElement = document.getElementById('calculationList');
+    calculationListElement.appendChild(tlist);
+    console.log(area);
+}
+function rectangleArea(){
+    count += 1;
+    const result = getElementByInput('rectangleFirstInput','rectangleSecondInput');
+    const area = result;
+    const tlist = createListItem(count,'Rectangle', area);
+    const calculationListElement = document.getElementById('calculationList');
+    calculationListElement.appendChild(tlist);
+    console.log(area);
+}
+function parallelogramArea(){
+    count += 1;
+    const result = getElementByInput('parallelogramFirstInput','parallelogramSecondInput');
+    const area = 0.5*result;
+    const tlist = createListItem(count,'Parallelogram', area);
+    const calculationListElement = document.getElementById('calculationList');
+    calculationListElement.appendChild(tlist);
+    console.log(area);
+}
+function rhombusArea(){
+    count += 1;
+    const result = getElementByInput('rhombusFirstInput','rhombusSecondInput');
+    const area = result;
+    const tlist = createListItem(count,'Rhombus', area);
+    const calculationListElement = document.getElementById('calculationList');
+    calculationListElement.appendChild(tlist);
+    console.log(area);
+}
+function pentagonArea(){
+    count += 1;
+    const result = getElementByInput('pentagonFirstInput','pentagonSecondInput');
+    const area = result;
+    const tlist = createListItem(count,'Pentagon', area);
+    const calculationListElement = document.getElementById('calculationList');
+    calculationListElement.appendChild(tlist);
     console.log(area);
 }
 
