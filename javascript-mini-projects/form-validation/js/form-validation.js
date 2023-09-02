@@ -5,13 +5,13 @@ const password = document.querySelector("#password");
 const passwordConfirm = document.querySelector("#passwordConfirm");
 const termAgree = document.querySelector("#termAgree");
 const errorContainer = document.querySelector(".error");
-const errorTitle = document.querySelector(".error-title")
+const errorTitle = document.querySelector(".error-title");
 const errorList = document.querySelector(".errorList");
 
 form.addEventListener("submit", (e) => {
   const isChecked = termAgree.checked;
-  const errorMessage = []
-  clearErrorMessage()
+  const errorMessage = [];
+  clearErrorMessage();
   if (username.value.length < 6) {
     errorMessage.push("Username must be atleast 6 letter");
   }
@@ -32,12 +32,12 @@ form.addEventListener("submit", (e) => {
     showError(errorMessage);
     e.preventDefault();
   }
-})
-function clearErrorMessage(){
+});
+function clearErrorMessage() {
   // errorList.innerHTML=""  //or we can do
-  
-  while(errorList.children[0]!= null){
-    errorList.removeChild(errorList.children[0])
+
+  while (errorList.children[0] != null) {
+    errorList.removeChild(errorList.children[0]);
   }
 }
 

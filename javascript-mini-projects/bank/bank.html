@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bank inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="deposit-withdraw.js" defer></script> -->
+    <script src="deposit-withdraw-one-function.js" defer></script>
+  </head>
+  <body>
+    <header class="text-center text-5xl">
+      Welcome to <span class="text-blue-500 font-bold">My Bank</span>
+    </header>
+    <main>
+      <button onclick="location.href='login.html'" class="bg-slate-400 p-2">
+        Go Back
+      </button>
+      <section>
+        <div class="grid grid-cols-3 gap-4 w-9/12 m-auto [&>*]:p-8 text-left [&>*]:rounded-lg [&>*>h3]:text-5xl">
+          <div class="bg-green-300">
+            <h4>Deposit</h4>
+            <h3 class="">$<span id="deposit-total" >00</span></h3>
+          </div>
+          <div class="bg-red-300">
+            <h4>Credit</h4>
+            <h3  class="">$<span id="credit-total">00</span></h3>
+          </div>
+          <div class="bg-blue-300">
+            <h4>Total</h4>
+            <h3  class="">$<span id="account-total">1000</span></h3>
+          </div>
+        </div>
+      </section>
+      <!-- deposit and withdraw -->
+      <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 w-9/12 m-auto [&>*]:p-8 text-left [&>*]:rounded-lg [&>*>h3]:text-5xl">
+          <div class="bg-purple-300">
+            <h4>Please Deposit</h4>
+            <input type="text" name="deposit" id="deposit" placeholder="Deposit value" class="p-2 rounded-lg w-9/12">
+            <button id="btn-deposit" class="bg-purple-200 p-2 rounded-lg"">Deposit</button>
+          </div>
+          <div class="bg-pink-300">
+            <h4>Please Withdraw</h4>
+            
+        <input type="text" name="withdraw" id="withdraw" placeholder="Withdraw value" class="p-2 rounded-lg w-9/12">
+        <button id="btn-withdraw" class="bg-pink-200 p-2 rounded-lg">Withdraw</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

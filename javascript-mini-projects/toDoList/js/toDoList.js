@@ -7,28 +7,26 @@ const list = document.querySelector('#list')
 
 form.addEventListener("submit",e=>{
     e.preventDefault()
-    console.log(input.value)
-    //
-    // create new items
+
     const item = document.createElement('div')
-    item.innerText= input.value
-    item.classList.add('list-item')
-
-    console.log(item)
-
+    // create new items
+    createItemBody(item)
     //add that item to list
-
-    list.appendChild(item)
-    //clear input
-    input.value=""
-    
+    addItem(item)
     //setup event listener to delete item when click
     item.addEventListener('click',()=>{
         // list.removeChild(item)
         item.remove()
     })
 
-
-
-
 })
+
+function createItemBody(item){
+    item.innerText= input.value
+    item.classList.add('list-item')
+}
+function addItem(item){
+    list.appendChild(item)
+    //clear input
+    input.value=""
+}

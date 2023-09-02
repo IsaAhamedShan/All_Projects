@@ -100,6 +100,7 @@ b {
     font-size: 1.8rem;
 }
 
+
 .btn-primary {
     padding: 1.5rem 2.25rem;
     outline: none;
@@ -113,6 +114,7 @@ b {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 /* navbar */
@@ -508,11 +510,13 @@ padding-bottom: 2.5rem;
     margin: 5rem 2.5rem;
     min-width: 33rem;
     box-shadow: 0 2px 4px rgba(147, 147, 147, 0.5);
+
 }
 
 .contactMe-heading {
     text-align: center;
     color: #dcdcdc;
+
 }
 
 .contact-me-footer {
