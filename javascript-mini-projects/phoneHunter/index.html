@@ -13,9 +13,24 @@
     <script src="phone.js" defer></script>
   </head>
   <body>
+    <div class="dialog-container"></div>
+    <div class="bg-slate-400 p-4 flex justify-center" id="phone-search">
+      <input
+        type="text"
+        placeholder="Type here"
+        id="inputField"
+        class="input input-md mx-2 input-bordered w-full max-w-xs bg-white"
+      />
+      <button class="btn btn-primary btn-md" id="btn-search">Search</button>
+    </div>
+    <div id="loading">
+
+    </div>
     <div
       id="phone-container"
       class="bg-gray-300 flex flex-wrap justify-center [&>*]:max-w-[40rem] [&>*]:p-6"
-    ></div>
+    >
+    
+  </div>
   </body>
 </html>
