@@ -19,7 +19,7 @@ function createListItem(count, name,area){
       <td>${area.toFixed(2)}</td>
       <p>cm<sup>2</sup></p>
       <td>
-      <button class='btn btn-primary mx-3'>Convert</button>
+      <button class='btn btn-primary mx-3 my-2 ml-[7rem]'>Convert</button>
       </td>
     `;
     return tr;
@@ -57,7 +57,7 @@ function parallelogramArea(){
 function rhombusArea(){
     count += 1;
     const result = getElementByInput('rhombusFirstInput','rhombusSecondInput');
-    const area = result;
+    const area = 0.5 * result;
     const tlist = createListItem(count,'Rhombus', area);
     const calculationListElement = document.getElementById('calculationList');
     calculationListElement.appendChild(tlist);
@@ -66,8 +66,17 @@ function rhombusArea(){
 function pentagonArea(){
     count += 1;
     const result = getElementByInput('pentagonFirstInput','pentagonSecondInput');
-    const area = result;
+    const area = 0.5 * result;
     const tlist = createListItem(count,'Pentagon', area);
+    const calculationListElement = document.getElementById('calculationList');
+    calculationListElement.appendChild(tlist);
+    console.log(area);
+}
+function ellipseArea(){
+    count += 1;
+    const result = getElementByInput('ellipseFirstInput','ellipseSecondInput');
+    const area = Math.PI * result;
+    const tlist = createListItem(count,'Ellipse', area);
     const calculationListElement = document.getElementById('calculationList');
     calculationListElement.appendChild(tlist);
     console.log(area);
