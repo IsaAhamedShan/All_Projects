@@ -27,7 +27,7 @@ const  displayPhones = (phones)=>{
         li.innerHTML = `
         <div class="card card-normal w-96 bg-white shadow-xl">
         <figure class="px-10 pt-10">
-        <img src= ${item.image} id ="" alt="Iphone" class="rounded-xl" />
+        <img src= ${item.image} id ="" alt="Iphone" class="rounded-lg" />
         </figure>
         <div class="card-body items-center text-center">
         <h2 class="card-title">${item.phone_name}</h2>
@@ -58,7 +58,7 @@ function addDialog(item) {
     const li = document.createElement('li')
     li.innerHTML = `
     <dialog data-modal class="max-w-[40rem] p-6 rounded-lg bg-slate-500 shadow-lg [&>*]:py-2">
-        <img class="m-auto" src="${item.image}" alt="Phone's pic" />
+        <img class="m-auto bg-slate-300 px-[12rem] py[5rem] rounded-lg" src="${item.image}" alt="Phone's pic" />
         <h3 class="text-3xl font-bold">${item.name}</h3>
         <p>
           It is a long established fact that a reader will be distracted by the
@@ -82,8 +82,5 @@ function addDialog(item) {
     closeBtn.addEventListener('click', () =>{
     theModal.close()
     li.remove()
-
     })
 }
-
- 
