@@ -1,0 +1,53 @@
+[
+    {
+      "id": "12345",
+      "cover": "https://i.ibb.co/z535SfB/coverpage1.png",
+      "title": "The Mystery of the Hidden Treasure",
+      "author": "Isa Ahamed",
+      "author_img": "https://i.ibb.co/b1xHMgL/circle-cropped.png",
+      "posted_date": "2023-09-26",
+      "reading_time": 15,
+      "hashtags": ["mystery", "adventure", "treasure"]
+    },
+    {
+      "id": "67890",
+      "cover": "https://i.ibb.co/z535SfB/coverpage1.png",
+      "title": "Fantasy World Chronicles",
+      "author": "Jane Doe",
+      "author_img": "https://i.ibb.co/b1xHMgL/circle-cropped.png",
+      "posted_date": "2023-09-25",
+      "reading_time": 20,
+      "hashtags": ["fantasy", "magic", "adventure"]
+    },
+    {
+      "id": "54321",
+      "cover": "https://i.ibb.co/z535SfB/coverpage1.png",
+      "title": "Cooking Delights: Recipes from Around the World",
+      "author": "Alice Johnson",
+      "author_img": "https://i.ibb.co/b1xHMgL/circle-cropped.png",
+      "posted_date": "2023-09-24",
+      "reading_time": 30,
+      "hashtags": ["cooking", "recipes", "world cuisine"]
+    },
+    {
+      "id": "98765",
+      "cover": "https://i.ibb.co/cyPNDcq/kendal-hnys-CJr-Ppkc-unsplash.jpg",
+      "title": "Tech Trends: A Guide to the Future",
+      "author": "David Williams",
+      "author_img": "https://i.ibb.co/b1xHMgL/circle-cropped.png",
+      "posted_date": "2023-09-23",
+      "reading_time": 25,
+      "hashtags": ["technology", "innovation", "future"]
+    },
+    {
+      "id": "24680",
+      "cover": "https://i.ibb.co/cyPNDcq/kendal-hnys-CJr-Ppkc-unsplash.jpg",
+      "title": "Traveling the World on a Budget",
+      "author": "Emily Brown",
+      "author_img": "https://i.ibb.co/b1xHMgL/circle-cropped.png",
+      "posted_date": "2023-09-22",
+      "reading_time": 40,
+      "hashtags": ["travel", "budget", "adventure"]
+    }
+  ]
+  
