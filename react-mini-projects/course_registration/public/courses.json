@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "course_name": "Introduction to Programming",
+    "course_detail": "Learn the basics of programming with this introductory course and fundamental programming concepts and principles.",
+    "price": 50,
+    "credit": 3,
+    "course_thumbnail": "../src/assets/Rectangle 2-2.png"
+  },
+  {
+    "id": 2,
+    "course_name": "Web Development",
+    "course_detail": "Explore the world of web development and build your first website. This course covers HTML, CSS, and JavaScript.",
+    "price": 60,
+    "credit": 4,
+    "course_thumbnail": "../src/assets/Rectangle 2-2.png"
+  },
+  {
+    "id": 3,
+    "course_name": "Data Science Essentials",
+    "course_detail": "Master data analysis and visualization techniques using Python. This comprehensive course includes hands-on projects.",
+    "price": 80,
+    "credit": 5,
+    "course_thumbnail": "../src/assets/Rectangle 2-2.png"
+  },
+  {
+    "id": 4,
+    "course_name": "Digital Marketing Strategies",
+    "course_detail": "Learn the latest digital marketing tactics to boost your online presence. This course covers social media marketing, SEO, and more.",
+    "price": 70,
+    "credit": 4,
+    "course_thumbnail": "../src/assets/Rectangle 2-2.png"
+  },
+  {
+    "id": 5,
+    "course_name": "Graphic Design Fundamentals",
+    "course_detail": "Unlock your creativity and design stunning graphics. This course covers design principles and popular graphic design tools.",
+    "price": 60,
+    "credit": 3,
+    "course_thumbnail": "../src/assets/Rectangle 2-2.png"
+  },
+  {
+    "id": 6,
+    "course_name": "Business Management Principles",
+    "course_detail": "Develop essential management skills for success in business. This course includes leadership training and business strategy.",
+    "price": 90,
+    "credit": 6,
+    "course_thumbnail": "../src/assets/Rectangle 2-2.png"
+  }
+]
