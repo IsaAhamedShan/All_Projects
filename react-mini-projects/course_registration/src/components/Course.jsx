@@ -1,4 +1,4 @@
-const Course = ({ course,addToList }) => {
+const Course = ({ course,addToList,addedToStateOrNot}) => {
   const { course_name, id, price, credit, course_detail, course_thumbnail } =
     course;
   // console.log(course);
@@ -29,7 +29,7 @@ const Course = ({ course,addToList }) => {
           <p>Credit : {credit} hrs</p>
         </div>
       </div>
-      <button className="btn-md btn btn-primary" onClick={()=>{addToList(course)}}>Select</button>
+      <button className="btn-md btn btn-primary" onClick={()=>{addToList(course)}}>select</button>
     </div>
   );
 };

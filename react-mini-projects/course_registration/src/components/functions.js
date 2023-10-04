@@ -1,25 +1,3 @@
-const getCourseRemainHour = ()=>{
- const items = localStorage.getItem('remainHour')
- if(items){
-    return JSON.parse(items)
- }
- return 20
-}
-const totalCreditHour = ()=>{
- const items = localStorage.getItem('totalCredit')
- if(items){
-    return JSON.parse(items)
- }
- return 0
-}
-const totalPrice = ()=>{
- const items = localStorage.getItem('totalPrice')
- if(items){
-    return JSON.parse(items)
- }
- return 0
-}
-
 
 const getCourseListFromLS=()=>{
     const items = localStorage.getItem('course_list')
@@ -39,6 +17,11 @@ const newCourseList = [...existCourseList,id]
 saveItemToLS(newCourseList)
 
 }
+const deleteItemFromLS=(course)=>{
+const getExistItems = getCourseListFromLS();
+const itemsAfterDelete = getExistItems.filter(items=>items!= course.id);
+saveItemToLS(itemsAfterDelete)
+}
 
 
-export {addItemToLS,saveItemToLS,getCourseListFromLS}
+export {addItemToLS,saveItemToLS,getCourseListFromLS,deleteItemFromLS}

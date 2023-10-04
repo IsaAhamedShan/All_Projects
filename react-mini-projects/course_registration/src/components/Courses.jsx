@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Course from "./Course";
 import CourseList from "./CourseList";
-import { addItemToLS,saveItemToLS,getCourseListFromLS } from "./functions";
+import { addItemToLS, deleteItemFromLS, getCourseListFromLS } from "./functions";
 const Courses = () => {
   const [course, setCourse] = useState([]);
   useEffect(() => {
@@ -14,17 +14,30 @@ const Courses = () => {
   const [totalCredRemain, setTotalCredRemain] = useState(20);
   const [totalCred, setTotalCred] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
+  // const [stateOfAddingOrDelete, setStateOfAddingOrDelete] = useState(false);
   const addToList = course => {
-    if (totalCredRemain - course.credit >= 0  && !courseList.includes(course)) {
-      const newList = [...courseList, course];
-      setCourseList(newList);
-      setTotalCredRemain(totalCredRemain - course.credit);
-      setTotalPrice(totalPrice + course.price);
-      setTotalCred(totalCred + course.credit);
-      console.log(courseList);
-      addItemToLS(course.id)
-    //   addTotalCreditTOLS(totalCred);
-    //   addTotalCredRemain(totalCredRemain);
+    // setStateOfAddingOrDelete(!stateOfAddingOrDelete)
+      if (totalCredRemain - course.credit >= 0  && !courseList.includes(course)) {
+        const newList = [...courseList, course];
+        setCourseList(newList);
+        setTotalCredRemain(totalCredRemain - course.credit);
+        setTotalPrice(totalPrice + course.price);
+        setTotalCred(totalCred + course.credit);
+        console.log(courseList);
+        addItemToLS(course.id)
+      //   addTotalCreditTOLS(totalCred);
+      //   addTotalCredRemain(totalCredRemain);
+      }
+    if(courseList.includes(course)){
+      console.log("cousrse: ",course)
+      const newList = courseList.filter(item=>item!=course)
+        // console.log(newList)
+        setTotalCred(totalCred-course.credit)
+        setTotalCredRemain(totalCredRemain + course.credit);
+        setTotalPrice(totalPrice - course.price);
+        setCourseList(newList);
+        deleteItemFromLS(course)
+
     }
   };
 //   retriving data from localstorage
