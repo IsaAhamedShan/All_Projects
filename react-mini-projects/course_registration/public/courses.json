@@ -5,7 +5,7 @@
     "course_detail": "Learn the basics of programming with this introductory course and fundamental programming concepts and principles.",
     "price": 50,
     "credit": 3,
-    "course_thumbnail": "../src/assets/Rectangle 2-2.png"
+    "course_thumbnail": "../src/assets/Rectangle 2-1.png"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "course_detail": "Master data analysis and visualization techniques using Python. This comprehensive course includes hands-on projects.",
     "price": 80,
     "credit": 5,
-    "course_thumbnail": "../src/assets/Rectangle 2-2.png"
+    "course_thumbnail": "../src/assets/Rectangle 2-3.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "course_detail": "Learn the latest digital marketing tactics to boost your online presence. This course covers social media marketing, SEO, and more.",
     "price": 70,
     "credit": 4,
-    "course_thumbnail": "../src/assets/Rectangle 2-2.png"
+    "course_thumbnail": "../src/assets/Rectangle 2-4.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "course_detail": "Unlock your creativity and design stunning graphics. This course covers design principles and popular graphic design tools.",
     "price": 60,
     "credit": 3,
-    "course_thumbnail": "../src/assets/Rectangle 2-2.png"
+    "course_thumbnail": "../src/assets/Rectangle 2-5.png"
   },
   {
     "id": 6,
@@ -45,6 +45,6 @@
     "course_detail": "Develop essential management skills for success in business. This course includes leadership training and business strategy.",
     "price": 90,
     "credit": 6,
-    "course_thumbnail": "../src/assets/Rectangle 2-2.png"
+    "course_thumbnail": "../src/assets/Rectangle 2-6.png"
   }
 ]

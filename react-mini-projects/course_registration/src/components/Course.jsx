@@ -1,6 +1,7 @@
-const Course = ({ course,addToList,addedToStateOrNot}) => {
+const Course = ({ course,addToList,courseList}) => {
   const { course_name, id, price, credit, course_detail, course_thumbnail } =
     course;
+    // console.log('sd:' ,courseList)
   // console.log(course);
   return (
     <div className="max-w-[25rem] flex flex-col bg-white text-slate-500 p-5 rounded-lg">
@@ -29,7 +30,7 @@ const Course = ({ course,addToList,addedToStateOrNot}) => {
           <p>Credit : {credit} hrs</p>
         </div>
       </div>
-      <button className="btn-md btn btn-primary" onClick={()=>{addToList(course)}}>select</button>
+      <button className="btn-md btn btn-primary" onClick={()=>{addToList(course)}}>{(courseList.includes(course))? 'Remove':'Select'}</button>
     </div>
   );
 };
